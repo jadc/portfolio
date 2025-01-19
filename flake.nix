@@ -6,10 +6,10 @@
         pkgs = import nixpkgs { inherit system; };
     in {
         devShells.${system}.default = pkgs.mkShell {
-            packages = with pkgs; [ nodejs ];
+            packages = with pkgs; [ bun ];
             shellHook = ''
                 export PS1="\w $ ";
-                cd app && npm run dev
+                cd app && bun run dev
             '';
         };
     };
