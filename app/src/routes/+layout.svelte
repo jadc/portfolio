@@ -2,15 +2,12 @@
 	import "../app.css";
 	let { children } = $props();
 
-	import Sidebar from "$lib/Sidebar.svelte"
+	import Navbar from "$lib/Navbar.svelte"
 </script>
 
-<div class="flex w-screen h-screen overflow-hidden bg-orange-600">
-    <Sidebar class="bg-red-600"/>
-    <main>
+<div class="w-screen h-screen bg-black">
+    <Navbar class="max-w-screen-lg m-auto p-10 bg-slate-900 text-white"/>
+    <main class="max-w-screen-lg m-auto p-10 bg-orange-400">
         {@render children()}
     </main>
-    <footer>
-        <p>Footer text</p>
-    </footer>
 </div>
