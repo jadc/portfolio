@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Button from "$lib/Button.svelte"
+	let props = $props();
 	let nav = [
         { name: "Projects",   href: "/projects" },
         { name: "Experience", href: "/jobs" },
@@ -12,7 +13,7 @@
     ];
 </script>
 
-<div class="max-w-screen-lg mx-auto">
+<div {...props}>
     <header class="flex flex-col md:flex-row p-10 gap-5 bg-slate-900 text-white rounded-b-xl md:rounded-xl">
         <img class="w-full md:w-1/4 max-w-md m-auto" src="icons/jad.svg" alt="Jad Chehimi">
         <aside class="flex flex-col gap-2">
