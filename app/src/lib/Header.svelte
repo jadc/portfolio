@@ -7,7 +7,7 @@
 	let external = [
         { name: "GitHub",   href: "https://github.com/jadc" },
         { name: "Linkedin", href: "https://www.linkedin.com/in/jad-c" },
-        { name: "Resume",   href: "/resume" },
+        { name: "Resume",   href: "/icons/jad.svg" },
     ];
 
     // States
