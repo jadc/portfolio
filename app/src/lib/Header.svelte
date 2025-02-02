@@ -1,10 +1,9 @@
 <script lang="ts">
-	let { name } = $props();
-
 	import Navbar from "$lib/Navbar.svelte"
 	import Button from "$lib/Button.svelte"
 
     // Data (temporary)
+    let name = "Jad Chehimi";
 	let external = [
         { name: "GitHub",   href: "https://github.com/jadc" },
         { name: "Linkedin", href: "https://www.linkedin.com/in/jad-c" },
@@ -13,7 +12,7 @@
 
     // States
     let header: HTMLElement;
-	let navBackground = $state(false);
+	let showBg = $state(false);
 
     // Fade in nav bar when main header is scrolled past
     $effect(() => {
@@ -21,7 +20,7 @@
 
         const observer = new IntersectionObserver(entries => {
             const [entry] = entries;
-            navBackground = !entry.isIntersecting;
+            showBg = !entry.isIntersecting;
 
         }, { threshold: 0 });
         observer.observe(header);
@@ -30,7 +29,7 @@
     });
 </script>
 
-<header bind:this={header} class="flex flex-col md:flex-row p-10 gap-5 text-white rounded-b-3xl md:rounded-3xl bg-zinc-900 bg-opacity-80 backdrop-blur-sm">
+<header bind:this={header} class="flex flex-col md:flex-row p-10 gap-5 text-white rounded-b-3xl md:rounded-3xl bg-background/80 backdrop-blur-sm">
     <img class="w-full md:w-1/4 max-w-md m-auto" src="icons/jad.svg" alt="{name}">
     <aside class="flex flex-col gap-2">
         <div>
@@ -45,4 +44,4 @@
         {/each}
     </nav>
 </header>
-<Navbar {name} {navBackground} />
+<Navbar {showBg} />
