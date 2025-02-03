@@ -70,4 +70,4 @@
     });
 </script>
 
-<canvas bind:this={canvas} class="fixed top-0 left-0 w-screen h-screen bg-gradient-to-t from-background to-sky"></canvas>
+<canvas bind:this={canvas} class="fixed top-0 left-0 w-screen h-screen bg-gradient-to-t from-night to-sky"></canvas>

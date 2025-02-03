@@ -29,7 +29,7 @@
     });
 </script>
 
-<header bind:this={header} class="flex flex-col md:flex-row p-10 gap-5 text-white rounded-b-3xl md:rounded-3xl bg-background/80 backdrop-blur-sm">
+<header bind:this={header} class="flex flex-col md:flex-row p-10 gap-5 text-white rounded-b-3xl md:rounded-3xl bg-main-900/70 backdrop-blur-xs">
     <img class="w-full md:w-1/4 max-w-md m-auto" src="icons/jad.svg" alt="{name}">
     <aside class="flex flex-col gap-2">
         <div>
