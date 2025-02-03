@@ -11,6 +11,10 @@
         { name: "Experience", href: "/experience" },
         { name: "Posts",      href: "/posts" },
     ];
+
+    function onclick() {
+        console.log("todo");
+    }
 </script>
 
 <nav class="
@@ -19,6 +23,6 @@
         rounded-full { showBg ? 'bg-black/20 backdrop-blur-xs ' : 'bg-main-950/0'} duration-500 ease-in-out
         ">
     {#each nav as x (x.href)}
-        <Button active={page.url.pathname === x.href} label={x.name} href={x.href} icon="github"/>
+        <Button {onclick} active={page.url.pathname === x.href} label={x.name} href={x.href} icon="github"/>
     {/each}
 </nav>
