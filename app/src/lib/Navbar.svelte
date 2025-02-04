@@ -18,7 +18,7 @@
 </script>
 
 <nav class="
-        sticky top-4 p-2 z-50 inset-x-0 mx-auto w-fit
+        sticky top-4 p-2 z-100 inset-x-0 mx-auto w-fit
         flex gap-2 justify-center items-center
         rounded-full { showBg ? 'bg-black/20 backdrop-blur-xs ' : 'bg-main-950/0'} duration-500 ease-in-out
         ">
