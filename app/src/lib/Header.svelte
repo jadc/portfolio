@@ -23,7 +23,7 @@
     });
 </script>
 
-<div class="relative top-0 left-0 w-screen h-screen flex justify-center items-center">
+<div class="relative top-0 left-0 w-screen max-w-full h-screen flex justify-center items-center">
     <header bind:this={header} class="max-w-screen-lg flex flex-col md:flex-row p-10 gap-5 text-white bg-main-950/70 rounded-3xl backdrop-blur-xs">
         <img class="w-full md:w-1/4 max-w-md m-auto" src="icons/jad.svg" alt="{name}">
         <aside class="flex flex-col gap-2">

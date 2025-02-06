@@ -10,7 +10,7 @@
 
 <Background/>
 <Header/>
-<div class="relative w-screen bg-main-700/80 backdrop-blur-xs">
+<div class="relative w-screen max-w-full bg-main-700/80 backdrop-blur-xs">
     <main class="max-w-screen-lg mx-auto md:py-4">
         {@render children()}
     </main>
